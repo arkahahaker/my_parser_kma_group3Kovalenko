@@ -1,4 +1,4 @@
-# my_parser_kma_group3
+# my_parser_kma_group3Kovalenko
 
 Parser <b>not</b> only for education purpose😏😳
 
