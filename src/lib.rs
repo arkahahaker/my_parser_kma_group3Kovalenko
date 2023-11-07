@@ -1,7 +1,6 @@
 extern crate peg;
 
 use std::fs;
-use std::collections::HashMap;
 
 #[derive(Debug, PartialEq)]
 pub struct Song {
