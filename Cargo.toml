@@ -1,5 +1,5 @@
 [package]
-name = "my_parser_kma_group3Kovalenko"
+name = "pls_parser"
 version = "0.1.0"
 edition = "2021"
 description = "Parser"
@@ -9,3 +9,4 @@ license = "MIT"
 
 [dependencies]
 peg = "0.8.2"
+clap = "2.33"
