@@ -18,6 +18,7 @@ Add this library to your `Cargo.toml`:
 ```toml
 [dependencies]
 pls_parser = "0.1"
+```
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
