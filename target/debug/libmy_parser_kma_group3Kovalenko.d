@@ -1,0 +1,1 @@
+B:\rustParserFirstStep\my_parser_kma_group3Kovalenko\target\debug\libmy_parser_kma_group3Kovalenko.rlib: B:\rustParserFirstStep\my_parser_kma_group3Kovalenko\src\lib.rs
