@@ -1,0 +1,1 @@
+B:\rustParserFirstStep\my_parser_kma_group3Kovalenko\target\package\pls_parser-0.2.0\target\debug\libpls_parser.rlib: B:\rustParserFirstStep\my_parser_kma_group3Kovalenko\target\package\pls_parser-0.2.0\src\lib.rs
