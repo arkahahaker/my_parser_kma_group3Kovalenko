@@ -20,10 +20,10 @@ Add this library to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-pls_parser = "0.1"
+pls_parser = "0.2.0"
 ```
 
-## How to use via CLI
+## Example
 
 To parse your file via CLI write the command:
 
