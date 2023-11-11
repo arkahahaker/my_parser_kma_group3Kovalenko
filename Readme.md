@@ -2,7 +2,6 @@
 
 ![Rust](https://img.shields.io/badge/language-Rust-orange.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Rust CI](https://github.com/yourusername/rust-pls-parser/workflows/Rust%20CI/badge.svg)](https://github.com/yourusername/rust-pls-parser/actions)
 
 A Rust programm for parsing PLS (Playlist) files.
 PLS files are commonly used to store playlists for multimedia applications.
