@@ -50,7 +50,15 @@ pub fn parse(content: &str) -> &str {
     for (index, song) in parsed.iter().enumerate() {
         match &song.length {
             Some(length) => {
-                println!("{}: Title: {}, \r\n   File: {}, \r\n   Length: {} seconds", index + 1, song.title, song.file, length);
+                if length < &60 {
+                    println!("{}: Title: {}, \r\n   File: {}, \r\n   Length: {} seconds", index + 1, song.title, song.file, length);
+                } else if length % &60 == 0 {
+                    let len_str = (length/60).to_string() + " minutes ";
+                    println!("{}: Title: {}, \r\n   File: {}, \r\n   Length: {}", index + 1, song.title, song.file, len_str);
+                } else {
+                    let len_str = (length/60).to_string() + " minutes " + &((length%60).to_string()) + " seconds";
+                    println!("{}: Title: {}, \r\n   File: {}, \r\n   Length: {}", index + 1, song.title, song.file, len_str);
+                }
             }
             None => {
                 println!("{}: Title: {}, \r\n   File: {}", index + 1, song.title, song.file);

@@ -8,7 +8,6 @@ This applications allows you to read the content of PLS files
 and display it in the command line.
 You can test it using 'cargo run test_data.pls' command"""
 license = "MIT"
-authors = ["Arkadii Kovalenko"]
 
 [dependencies]
 peg = "0.8.2"
