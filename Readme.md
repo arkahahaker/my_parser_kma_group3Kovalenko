@@ -54,4 +54,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 If you have questions or need assistance, feel free to open an issue.
 For other inquiries, you can contact us at arkadiy.delphi@gmail.com.
 
+![image](https://github.com/arkananasfa/my_parser_kma_group3Kovalenko/assets/49276383/af1f9681-b95b-43d8-960b-45e10d5312d0)
 Happy coding!
+
