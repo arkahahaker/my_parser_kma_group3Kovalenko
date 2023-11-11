@@ -10,13 +10,13 @@ pub fn main() -> Result<(), ParseError<LineCol>> {
         .author("arkananasfa")
         .version("0.1.0")
         .about("Parse PLS files to console")
-        .arg(Arg::with_name("file")
+        .arg(Arg::with_name("file to parse")
             .help("Print the path to the file: ")
             .required(true)
             .index(1))
         .get_matches();
   
-    let path = Path::new(matches.value_of("file").unwrap());
+    let path = Path::new(matches.value_of("file to parse").unwrap());
   
     if path.is_file() {
       match fs::read_to_string(&path) {
@@ -24,11 +24,11 @@ pub fn main() -> Result<(), ParseError<LineCol>> {
           parse(&contents);
         }
         Err(err) => {
-          eprintln!("Can't reading file. {}", err);
+          println!("Can't reading file. Error: {}", err);
         }
       }
     } else {
-      eprintln!("File not exist.");
+      println!("File not exist.");
     }
   
     Ok(())

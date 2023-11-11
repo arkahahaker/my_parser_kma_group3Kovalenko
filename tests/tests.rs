@@ -31,8 +31,21 @@ use pls_parser::Song;
 
     #[test]
     fn test_entry_rule() {
-        let entry_str = "File 1=my_file.mp3\nTitle 1=My Song - Artist\nLength 1=180\n";
+        let entry_str = "File1=my_file.mp3\r\nTitle1=My Song - Artist\r\nLength1=180\r\n";
         let entry = playlist_parser::entry(entry_str).unwrap();
+
+        assert_eq!(
+            entry,
+            Song {
+                file: "my_file.mp3".to_string(),
+                title: "My Song - Artist".to_string(),
+                length: Some(180),
+            }
+        );
+
+        let entry_str = "File1=my_file.mp3\r\nTitle1=My Song - Artist\r\nLength1=180";
+        let entry = playlist_parser::entry(entry_str).unwrap();
+
         assert_eq!(
             entry,
             Song {
@@ -45,7 +58,7 @@ use pls_parser::Song;
 
     #[test]
     fn test_playlist_rule() {
-        let playlist_str = "[playlist]\nVersion=2\nNumberOfEntries=1\nFile 1=my_file.mp3\nTitle 1=My Song - Artist\nLength 1=180\n";
+        let playlist_str = "[playlist]\nVersion=2\nNumberOfEntries=1\nFile1=my_file.mp3\nTitle1=My Song - Artist\nLength1=180\n";
         let playlist = playlist_parser::playlist(playlist_str).unwrap();
         assert_eq!(
             playlist,
@@ -90,6 +103,6 @@ Length3=300
                 length: Some(300),
             },
         ];
-
+        
         assert_eq!(playlist_parser::playlist(test_data), Ok(expected_playlist));
     }

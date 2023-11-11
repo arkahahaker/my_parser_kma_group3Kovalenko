@@ -2,10 +2,13 @@
 name = "pls_parser"
 version = "0.1.0"
 edition = "2021"
-description = "Parser"
+description = """A Rust programm for parsing PLS (Playlist) files.
+PLS files are commonly used to store playlists for multimedia applications.
+This applications allows you to read the content of PLS files
+and display it in the command line.
+You can test it using 'cargo run test_data.pls' command"""
 license = "MIT"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Arkadii Kovalenko"]
 
 [dependencies]
 peg = "0.8.2"
